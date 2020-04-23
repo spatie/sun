@@ -43,16 +43,6 @@
     "config": {
         "sort-packages": true
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Spatie\\Sun\\SunServiceProvider"
-            ],
-            "aliases": {
-                "Sun": "Spatie\\Sun\\SunFacade"
-            }
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
