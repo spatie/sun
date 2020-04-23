@@ -19,10 +19,12 @@ class Sun
 
     public function sunIsUp(Carbon $onDay = null): bool
     {
+        $onDay = $onDay ?? Carbon::now();
+
         $sunrise = $this->sunrise($onDay);
         $sunset = $this->sunset($onDay);
 
-        return Carbon::now()->between($sunrise, $sunset);
+        return $onDay->between($sunrise, $sunset);
     }
 
     public function sunrise(Carbon $onDay = null): Carbon
