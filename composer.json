@@ -1,11 +1,11 @@
 {
-    "name": "spatie/spatie-sun",
+    "name": "spatie/sun",
     "description": "Get information on the position of the sun",
     "keywords": [
         "spatie",
         "spatie-sun"
     ],
-    "homepage": "https://github.com/spatie/spatie-sun",
+    "homepage": "https://github.com/spatie/sun",
     "license": "MIT",
     "authors": [
         {
