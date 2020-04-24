@@ -27,7 +27,7 @@ When instantiating `Spatie\Sun\Sun` you should pass it coordinates.
 ```php
 $coordinatesOfAntwerp = ['lat' => 51.260197, 'lng' => 4.402771];
 
-$sun = new Sun(coordinatesOfAntwerp['lat'], coordinatesOfAntwerp['lng']);
+$sun = new Sun($coordinatesOfAntwerp['lat'], $coordinatesOfAntwerp['lng']);
 ```
 
 ### Get the time of sunrise
