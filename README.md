@@ -44,6 +44,20 @@ You can get the time of the sunrise on a specific date by passing in instance of
 $sun->sunrise($carbon); // returns an instance of \Carbon\Carbon
 ```
 
+### Get the time of zenith
+
+You can get the time of the zenith.
+
+```php
+$sun->zenith(); // returns an instance of \Carbon\Carbon
+```
+
+You can get the time of the zenith on a specific date by passing in instance of `Carbon\Carbon` to `zenith`
+
+```php
+$sun->zenith($carbon); // returns an instance of \Carbon\Carbon
+```
+
 ### Get the time of sunset
 
 You can get the time of the sunset.
