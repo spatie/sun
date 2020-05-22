@@ -66,7 +66,7 @@ You can get the time of the sunset.
 $sun->sunset(); // returns an instance of \Carbon\Carbon
 ```
 
-You can get the time of the sunset on a specific date by passing in instance of `Carbon\Carbon` to `sunrise`
+You can get the time of the sunset on a specific date by passing in instance of `Carbon\Carbon` to `sunset`
 
 ```php
 $sun->sunset($carbon); // returns an instance of \Carbon\Carbon
