@@ -6,6 +6,8 @@
 
 This package can determine several things on the position of the sun.
 
+![Ad](https://spatie.be/github/ad.png)
+
 ## Support us
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us). 
