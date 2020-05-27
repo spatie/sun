@@ -21,16 +21,10 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "pestphp/pest": "dev-master",
+        "pestphp/pest": "^0.1.2",
         "spatie/test-time": "^1.2",
         "symfony/var-dumper": "^4.3"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/pestphp/pest"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Spatie\\Sun\\": "src"

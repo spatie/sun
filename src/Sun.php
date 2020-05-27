@@ -41,6 +41,19 @@ class Sun
         return Carbon::createFromTimestamp($sunriseTimestamp);
     }
 
+    public function zenith(Carbon $onDay = null): Carbon
+    {
+        $onDay = $onDay ?? Carbon::now();
+
+        $sunTimestamp = date_sun_info(
+            $onDay->timestamp,
+            $this->lat,
+            $this->lng
+        )['transit'];
+
+        return Carbon::createFromTimestamp($sunTimestamp);
+    }
+
     public function sunset(Carbon $onDay = null): Carbon
     {
         $onDay = $onDay ?? Carbon::now();

@@ -29,7 +29,7 @@ When instantiating `Spatie\Sun\Sun` you should pass it coordinates.
 ```php
 $coordinatesOfAntwerp = ['lat' => 51.260197, 'lng' => 4.402771];
 
-$sun = new Sun(coordinatesOfAntwerp['lat'], coordinatesOfAntwerp['lng']);
+$sun = new Sun($coordinatesOfAntwerp['lat'], $coordinatesOfAntwerp['lng']);
 ```
 
 ### Get the time of sunrise
@@ -46,6 +46,20 @@ You can get the time of the sunrise on a specific date by passing in instance of
 $sun->sunrise($carbon); // returns an instance of \Carbon\Carbon
 ```
 
+### Get the time of zenith
+
+You can get the time of the zenith.
+
+```php
+$sun->zenith(); // returns an instance of \Carbon\Carbon
+```
+
+You can get the time of the zenith on a specific date by passing in instance of `Carbon\Carbon` to `zenith`
+
+```php
+$sun->zenith($carbon); // returns an instance of \Carbon\Carbon
+```
+
 ### Get the time of sunset
 
 You can get the time of the sunset.
@@ -54,7 +68,7 @@ You can get the time of the sunset.
 $sun->sunset(); // returns an instance of \Carbon\Carbon
 ```
 
-You can get the time of the sunset on a specific date by passing in instance of `Carbon\Carbon` to `sunrise`
+You can get the time of the sunset on a specific date by passing in instance of `Carbon\Carbon` to `sunset`
 
 ```php
 $sun->sunset($carbon); // returns an instance of \Carbon\Carbon

@@ -16,8 +16,10 @@ beforeEach(function () {
     $this->sun = new Sun($coordinatesOfAntwerp['lat'], $coordinatesOfAntwerp['lng']);
 });
 
-it('can determine sunrise and sunset for the current moment', function () {
+it('can determine sunrise, zenith and sunset for the current moment', function () {
     assertEquals('2020-01-01 08:46:41', $this->sun->sunrise()->format('Y-m-d H:i:s'));
+
+    assertEquals('2020-01-01 12:45:42', $this->sun->zenith()->format('Y-m-d H:i:s'));
 
     assertEquals('2020-01-01 16:44:43', $this->sun->sunset()->format('Y-m-d H:i:s'));
 });
@@ -37,10 +39,12 @@ it('can determine if the sun is up now', function () {
     assertFalse($this->sun->sunIsUp());
 });
 
-it('can determine sunrise and sunset for a specified moment', function () {
+it('can determine sunrise, zenith and sunset for a specified moment', function () {
     $now = Carbon::create(2020, 4, 23, 11, 20, 0, 'Europe/Brussels');
 
     assertEquals('2020-04-23 06:29:07', $this->sun->sunrise($now)->format('Y-m-d H:i:s'));
+
+    assertEquals('2020-04-23 13:40:37', $this->sun->zenith($now)->format('Y-m-d H:i:s'));
 
     assertEquals('2020-04-23 20:52:07', $this->sun->sunset($now)->format('Y-m-d H:i:s'));
 });
