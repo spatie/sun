@@ -6,6 +6,8 @@
 
 This package can determine several things on the position of the sun.
 
+## Learn how to create a package like this one
+
 [![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
 
 ## Support us
