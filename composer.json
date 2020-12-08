@@ -21,7 +21,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "pestphp/pest": "^0.1.2",
+        "pestphp/pest": "^0.3.15",
         "spatie/test-time": "^1.2",
         "vimeo/psalm": "^3.11",
         "symfony/var-dumper": "^4.3"
