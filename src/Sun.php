@@ -32,7 +32,7 @@ class Sun
         $onDay = $onDay ?? Carbon::now();
 
         $sunriseTimestamp = date_sunrise(
-            $onDay->timestamp,
+            (int)$onDay->timestamp,
             SUNFUNCS_RET_TIMESTAMP,
             $this->lat,
             $this->lng
@@ -46,7 +46,7 @@ class Sun
         $onDay = $onDay ?? Carbon::now();
 
         $sunTimestamp = date_sun_info(
-            $onDay->timestamp,
+            (int)$onDay->timestamp,
             $this->lat,
             $this->lng
         )['transit'];
@@ -59,7 +59,7 @@ class Sun
         $onDay = $onDay ?? Carbon::now();
 
         $sunsetTimestamp = date_sunset(
-            $onDay->timestamp,
+            (int)$onDay->timestamp,
             SUNFUNCS_RET_TIMESTAMP,
             $this->lat,
             $this->lng
