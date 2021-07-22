@@ -31,12 +31,11 @@ class Sun
     {
         $onDay = $onDay ?? Carbon::now();
 
-        $sunriseTimestamp = date_sunrise(
+        $sunriseTimestamp = date_sun_info(
             (int)$onDay->timestamp,
-            SUNFUNCS_RET_TIMESTAMP,
             $this->lat,
             $this->lng
-        );
+        )['sunrise'];
 
         return Carbon::createFromTimestamp($sunriseTimestamp);
     }
@@ -58,12 +57,11 @@ class Sun
     {
         $onDay = $onDay ?? Carbon::now();
 
-        $sunsetTimestamp = date_sunset(
+        $sunsetTimestamp = date_sun_info(
             (int)$onDay->timestamp,
-            SUNFUNCS_RET_TIMESTAMP,
             $this->lat,
             $this->lng
-        );
+        )['sunset'];
 
         return Carbon::createFromTimestamp($sunsetTimestamp);
     }
