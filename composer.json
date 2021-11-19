@@ -20,7 +20,6 @@
         "nesbot/carbon": "^2.32"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
         "pestphp/pest": "^1.0",
         "spatie/test-time": "^1.2",
         "symfony/var-dumper": "^4.3"
@@ -36,10 +35,8 @@
         }
     },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
         "sort-packages": true
