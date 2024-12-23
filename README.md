@@ -1,6 +1,3 @@
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
-
 # Get information on the position of the sun
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/sun.svg?style=flat-square)](https://packagist.org/packages/spatie/sun)
