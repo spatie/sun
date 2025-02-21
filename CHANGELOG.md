@@ -2,6 +2,10 @@
 
 All notable changes to `sun` will be documented in this file
 
+## 1.1.4 - 2025-02-21
+
+**Full Changelog**: https://github.com/spatie/sun/compare/1.1.3...1.1.4
+
 ## 1.1.3 - 2024-12-23
 
 ### What's Changed
