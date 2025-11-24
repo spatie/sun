@@ -2,6 +2,20 @@
 
 All notable changes to `sun` will be documented in this file
 
+## 1.1.5 - 2025-11-24
+
+### What's Changed
+
+* Update issue template by @AlexVanderbist in https://github.com/spatie/sun/pull/16
+* Added Symfony 8 support to all symfony/* packages. by @thecaliskan in https://github.com/spatie/sun/pull/18
+
+### New Contributors
+
+* @AlexVanderbist made their first contribution in https://github.com/spatie/sun/pull/16
+* @thecaliskan made their first contribution in https://github.com/spatie/sun/pull/18
+
+**Full Changelog**: https://github.com/spatie/sun/compare/1.1.4...1.1.5
+
 ## 1.1.4 - 2025-02-21
 
 **Full Changelog**: https://github.com/spatie/sun/compare/1.1.3...1.1.4
